@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="huoche.MyOrder.JYMyOrder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:huoche.MyOrder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFF0F0F0">
+        <Button x:Name="button" Content="未完成订单" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" Width="340" Height="64" Click="button_Click" Background="#CCFFFFFF" BorderBrush="#FF0E5B0E"/>
+        <Button x:Name="button_Copy" Content="已完成订单（改签/退签）" HorizontalAlignment="Center" Margin="0,173,0,0" VerticalAlignment="Top" Width="340" Height="64" Background="#CCFFFFFF" BorderBrush="#FF0E5B0E" Click="yiwanChengClick"/>
+        <Button x:Name="button_Copy1" Content="个人信息" HorizontalAlignment="Center" Margin="0,278,0,0" VerticalAlignment="Top" Width="340" Height="64" Background="#CCFFFFFF" BorderBrush="#FF0E5B0E" Click="geRenInfoClick"/>
+        <Button x:Name="button_Copy2" Content="常用联系人" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Width="340" Height="64" Background="#CCFFFFFF" BorderBrush="#FF0E5B0E" Click="ChangYongLianXiRenClick"/>
+        <Grid Height="44" VerticalAlignment="Top" Background="#FF0A1C6A">
+            <TextBlock x:Name="titleName" Margin="0,4,0,0" TextWrapping="Wrap" Text="我的订单" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" Foreground="White"/>
+            <Button x:Name="button1" Content="返回" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29" Width="58" Margin="6,7,0,0" Click="shuXinClick" RenderTransformOrigin="0.582,0.512" Foreground="White"/>
+        </Grid>
+
+    </Grid>
+</Page>

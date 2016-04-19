@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="huoche.JYChePiaoListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:huoche"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFF0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Height="44" VerticalAlignment="Top" Background="#FFC97942">
+            <TextBlock x:Name="titleName" Margin="80,4,80,0" TextWrapping="Wrap" Text="2015-10-31(151躺)" VerticalAlignment="Top" FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+            <Button x:Name="button" Content="刷新" HorizontalAlignment="Right" VerticalAlignment="Top" Height="32" Width="51" Margin="0,13,6,0" Click="shuXinClick" BorderBrush="#330FBB0F">
+            </Button>
+            <Button x:Name="button_Copy" Content="返回" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="51" Margin="10,8,0,0" Click="backClick" BorderBrush="#330FBB0F" Foreground="White"/>
+        </Grid>
+
+        <!--<Grid Height="100">
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="12,10,0,0" TextWrapping="Wrap" Text="K152" VerticalAlignment="Top" Height="28" Width="83" FontSize="21.333"/>
+                <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="12,40,0,0" TextWrapping="Wrap" Text="历时14：53" VerticalAlignment="Top" Height="28" Width="83" FontSize="16"/>
+                <TextBlock x:Name="textBlock1_Copy1" Margin="12,0,10,7" TextWrapping="Wrap" Text="【余票】硬座1260 无座802" VerticalAlignment="Bottom" Height="28" FontSize="16"/>
+                <TextBlock x:Name="textBlock1_Copy2" Margin="75,15,72,0" TextWrapping="Wrap" Text="过 上海" VerticalAlignment="Top" Height="28" FontSize="16" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="textBlock1_Copy3" Margin="0,40,0,0" TextWrapping="Wrap" Text="终 郑州" VerticalAlignment="Top" Height="28" FontSize="16" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="textBlock1_Copy4" Margin="0,15,20,0" TextWrapping="Wrap" Text="16：47开" VerticalAlignment="Top" Height="28" FontSize="16" HorizontalAlignment="Right"/>
+                <TextBlock x:Name="textBlock1_Copy5" Margin="0,40,19,0" TextWrapping="Wrap" Text="16：47到" VerticalAlignment="Top" Height="28" FontSize="16" HorizontalAlignment="Right"/>
+            </Grid>-->
+        <ListView Name="listview" Margin="10,64,10,55" SelectionChanged="listview_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="130" Width="Auto" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="12,10,0,0" TextWrapping="Wrap" Text="{Binding checi}" VerticalAlignment="Top" Height="28" Width="83" FontSize="21.333"/>
+                        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="12,40,0,0" TextWrapping="Wrap" Text="{Binding liShiShiJian}" VerticalAlignment="Top" Height="28" Width="200" FontSize="14"/>
+                        <TextBlock x:Name="textBlock1_Copy1" Margin="12,60,10,0" TextWrapping="Wrap" Text="{Binding yuPiao}" VerticalAlignment="Top" Height="Auto" FontSize="14" Width="400" HorizontalAlignment="Left"/>
+                        <TextBlock x:Name="textBlock1_Copy2" Margin="0,15,0,0" TextWrapping="Wrap" Text="{Binding qishiAddress}" VerticalAlignment="Top" Height="28" FontSize="14" HorizontalAlignment="Stretch" Width="100"/>
+                        <TextBlock x:Name="textBlock1_Copy3" Margin="0,40,0,0" TextWrapping="Wrap" Text="{Binding jieshuAddress}" VerticalAlignment="Top" Height="28" FontSize="14" HorizontalAlignment="Stretch" Width="100"/>
+                        <TextBlock x:Name="textBlock1_Copy4" Margin="0,15,20,0" TextWrapping="Wrap" Text="{Binding qishiTime}" VerticalAlignment="Top" Height="28" FontSize="14" HorizontalAlignment="Right"/>
+                        <TextBlock x:Name="textBlock1_Copy5" Margin="0,40,19,0" TextWrapping="Wrap" Text="{Binding jieshuTime}" VerticalAlignment="Top" Height="28" FontSize="14" HorizontalAlignment="Right"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Grid Margin="10,0" Height="50" VerticalAlignment="Bottom" Background="#FFF9DFBF">
+            <Button x:Name="button1" Content="前一天" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="36" Click="qianYiTianClick" BorderBrush="#3332AC16" Margin="10,7,171,0" Width="160"/>
+            <Button x:Name="button1_Copy" Content="后一天" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="36" Margin="177,7,4,0" Click="houYiTianClick" BorderBrush="#3332AC16" Width="160"/>
+        </Grid>
+
+
+    </Grid>
+</Page>

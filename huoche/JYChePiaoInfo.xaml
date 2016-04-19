@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="huoche.JYChePiaoInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:huoche"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFE6E6E6">
+        <Grid Height="44" VerticalAlignment="Top" Background="#FF18A40A">
+            <TextBlock x:Name="labForCheCi" Margin="0,6,0,0" TextWrapping="Wrap" Text="D282" VerticalAlignment="Top" TextAlignment="Center" Foreground="White" FontSize="24"/>
+            <Button x:Name="button" Content="返回" HorizontalAlignment="Left" Margin="11,0,0,0" VerticalAlignment="Center" Foreground="White" Click="backClick"/>
+        </Grid>
+        <ScrollViewer Margin="0,46,0,0">
+            <StackPanel x:Name="stackPanel">
+                <Grid Height="45" BorderBrush="#33000000" BorderThickness="0,0,0,1" Background="White">
+                    <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="发到站" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="labForFaDaoZhan" HorizontalAlignment="Right" Margin="10,15,20,0" TextWrapping="Wrap" Text="上海虹桥【始发】郑州【终到】" VerticalAlignment="Top" Width="340" TextAlignment="Right" Foreground="#FF7C7C7C"/>
+                </Grid>
+                <Grid Height="45" BorderBrush="#33000000" BorderThickness="0,0,0,1" Background="White">
+                    <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="开车时间" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="labForKaiCheShiJian" HorizontalAlignment="Right" Margin="0,15,20,0" TextWrapping="Wrap" Text="2015-11-06 06：25" VerticalAlignment="Top" Width="290" TextAlignment="Right" Foreground="#FF7C7C7C"/>
+                </Grid>
+                <Grid Height="45" BorderBrush="#33000000" BorderThickness="0,0,0,1" Background="White">
+                    <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="历程" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="labForLiCheng" HorizontalAlignment="Right" Margin="0,15,20,0" TextWrapping="Wrap" Text="历时07：11 .当天13.36到达" VerticalAlignment="Top" Width="290" TextAlignment="Right" Foreground="#FF7C7C7C"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

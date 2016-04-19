@@ -1,0 +1,48 @@
+﻿<UserControl
+    x:Class="huoche.MyOrder.JYUserOrderInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:huoche.MyOrder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Height="354.181">
+
+    <Grid Margin="0,0,0,-0.667">
+        <StackPanel Margin="0,30,0,0" Background="White">
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="姓名" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock x:FieldModifier="public" x:Name="labName" HorizontalAlignment="Right" TextWrapping="Wrap" Text="陈思婷" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="证件类型" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock  x:FieldModifier="public" x:Name="labZhengJianLeiXing" HorizontalAlignment="Right" TextWrapping="Wrap" Text="二代身份证" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="证件号" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock  x:FieldModifier="public"  x:Name="labZhengJianHao" HorizontalAlignment="Right" TextWrapping="Wrap" Text="4103432953984579483" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="票种" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock  x:FieldModifier="public"  x:Name="labPiaoZhong" HorizontalAlignment="Right" TextWrapping="Wrap" Text="成人票" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="席别" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock   x:FieldModifier="public" x:Name="labXiBie" HorizontalAlignment="Right" TextWrapping="Wrap" Text="硬卧" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="车厢" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock  x:FieldModifier="public"  x:Name="labCheXiang" HorizontalAlignment="Right" TextWrapping="Wrap" Text="09" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" TextWrapping="Wrap" Text="席位号" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock  x:FieldModifier="public"  x:Name="labXiWeiHao" HorizontalAlignment="Right" TextWrapping="Wrap" Text="15号中铺" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+            <Grid Margin="0" VerticalAlignment="Top" Height="40" BorderBrush="#CC000000" BorderThickness="0,0,0,1">
+                <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" TextWrapping="Wrap" Text="票价（元）" VerticalAlignment="Top" Margin="10,8,0,0"/>
+                <TextBlock  x:FieldModifier="public"  x:Name="labPiaoJia" HorizontalAlignment="Right" TextWrapping="Wrap" Text="168.00" VerticalAlignment="Top" Margin="0,8,20,0" Height="20" TextAlignment="Right" Foreground="#FF515151"/>
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

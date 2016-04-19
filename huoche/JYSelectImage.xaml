@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="huoche.JYSelectImage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:huoche"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="40.179"
+    d:DesignWidth="39.732" PointerReleased="UserControl_PointerReleased" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" Background="#FFBF8E8E">
+
+    <Grid BorderBrush="#FFFF0D0D" BorderThickness="2" RenderTransformOrigin="0.482,0.487">
+        <Grid.Background>
+            <ImageBrush Stretch="Uniform" ImageSource="Assets/selectImage.png"/>
+        </Grid.Background>
+
+    </Grid>
+</UserControl>
